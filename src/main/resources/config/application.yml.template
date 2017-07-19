@@ -1,0 +1,13 @@
+server:
+  port: 9000
+
+spring:
+  datasource:
+    url: jdbc:postgresql://10.211.55.8:5432/database
+    username: username
+    password: password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+      ddl-auto: none
