@@ -81,3 +81,5 @@ application-staging.yml
 
 # Logging #
 *.log
+
+src/main/webapp
