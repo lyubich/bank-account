@@ -1,13 +1,11 @@
 package account.services;
 
 import account.dao.models.BankAccount;
-import account.dao.repositories.IBankAccountRepository;
+import account.dao.repositories.BankAccountRepository;
 import account.forms.BankAccountForm;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
 import java.util.List;
 
 /**
@@ -18,7 +16,7 @@ import java.util.List;
 public class BankAccountService {
 
     @Autowired
-    private IBankAccountRepository bankAccountRepository;
+    private BankAccountRepository bankAccountRepository;
 
     public List<BankAccount> findAllBankAccount() {
         return bankAccountRepository.findAll();
